@@ -1,0 +1,23 @@
+.nav-link {
+    color: #fff;
+}
+
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #19c8fa;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #19c8fa;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 2px 5px;
+}
+
+.navbar-toggler:focus {
+    /* box-shadow: none; */
+}

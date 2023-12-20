@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(25, 200, 250);
+}
+
+.main-color,
+.border-main {
+    color: var(--main-color);
+    border-color: var(--main-color) !important;
+}
+
+
+.first-bg {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/landing.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.623);
+
+    .navbar-expand-md {
+        background-color: red;
+
+        .container {
+            height: 55px;
+            min-width: 266px;
+            padding-right: 70px;
+
+            >a {
+                margin-bottom: 10px;
+
+                img {
+                    @media (max-width:767.5px) {
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+
+            button {
+                position: relative;
+                bottom: 8.5px;
+
+                span {}
+            }
+
+            .collapse {
+                .navbar-nav {
+                    height: 55px;
+                    margin-bottom: -1px;
+
+                    :hover.nav-item {
+                        border-bottom: 1px solid var(--main-color);
+                    }
+
+                    .nav-item {
+                        border-bottom: 1px solid transparent;
+
+                        .nav-link {}
+                    }
+
+
+                }
+            }
+
+            +i {
+                color: white;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        +.container div {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 10px;
+            top: -55px;
+            color: #fff;
+            border-left: 2px solid #fff;
+            padding-left: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+}
