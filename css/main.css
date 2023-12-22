@@ -87,6 +87,7 @@
             i {
                 color: #fff;
                 cursor: pointer;
+                padding-right: 15px;
 
                 &:hover {
                     color: var(--main-color);
