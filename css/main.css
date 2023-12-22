@@ -17,8 +17,6 @@
 .first-bg {
 
     .navbar-dark {
-        margin-top: 10px;
-        height: 55px;
         background-color: red;
 
         .container {
@@ -68,26 +66,36 @@
         }
 
         +.container div {
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            right: 10px;
-            top: -45px;
-            border-left: 2px solid #fff;
-            padding-left: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
 
             i {
-                color: #fff;
-                cursor: pointer;
-                padding-right: 15px;
 
-                &:hover {
-                    color: var(--main-color);
-                }
+
+                &:hover {}
             }
         }
     }
+}
+
+.container.position-relative div {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: -55px;
+    border-left: 2px solid #fff;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.position-relative div i {
+    color: #fff;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.container.position-relative div i:hover {
+    color: var(--main-color);
 }
