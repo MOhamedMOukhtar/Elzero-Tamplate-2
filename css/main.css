@@ -14,14 +14,14 @@
     border-color: var(--main-color) !important;
 }
 
-
 .first-bg {
-    width: 100vw;
+
+    /* width: 100vw;
     height: 100vh;
     background: url(../images/landing.jpg) no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.623); */
 
     .navbar-expand-md {
         background-color: red;
@@ -62,8 +62,6 @@
 
                         .nav-link {}
                     }
-
-
                 }
             }
 
@@ -80,7 +78,6 @@
             position: absolute;
             right: 10px;
             top: -55px;
-            color: #fff;
             border-left: 2px solid #fff;
             padding-left: 40px;
             display: flex;
@@ -88,6 +85,7 @@
             justify-content: center;
 
             i {
+                color: #fff;
                 cursor: pointer;
 
                 &:hover {
