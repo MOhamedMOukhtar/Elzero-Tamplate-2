@@ -23,7 +23,7 @@
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.623); */
 
-    .navbar-expand-md {
+    .navbar-dark {
         background-color: red;
 
         .container {
