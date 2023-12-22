@@ -14,67 +14,42 @@
     border-color: var(--main-color) !important;
 }
 
-.first-bg {
+.first-bg .navbar-dark {
+    background-color: red;
+}
 
-    .navbar-dark {
-        background-color: red;
+.first-bg .navbar-dark .container {
+    height: 55px;
+    min-width: 266px;
+    padding-right: 70px;
+}
 
-        .container {
-            height: 55px;
-            min-width: 266px;
-            padding-right: 70px;
+.first-bg .navbar-dark .container .navbar-brand {
+    margin-bottom: 10px;
+}
 
-            >a {
-                margin-bottom: 10px;
-
-                img {
-                    @media (max-width:767.5px) {
-                        transform: translateY(-3px);
-                    }
-                }
-            }
-
-            button {
-                position: relative;
-                bottom: 8.5px;
-
-                span {}
-            }
-
-            .collapse {
-                .navbar-nav {
-                    height: 55px;
-                    margin-bottom: -1px;
-
-                    :hover.nav-item {
-                        border-bottom: 1px solid var(--main-color);
-                    }
-
-                    .nav-item {
-                        border-bottom: 1px solid transparent;
-
-                        .nav-link {}
-                    }
-                }
-            }
-
-            +i {
-                color: white;
-                position: absolute;
-                right: 0;
-            }
-        }
-
-        +.container div {
-
-
-            i {
-
-
-                &:hover {}
-            }
-        }
+@media (max-width:767.5px) {
+    .first-bg .navbar-dark .container .navbar-brand img {
+        transform: translateY(-3px);
     }
+}
+
+.first-bg button {
+    position: relative;
+    bottom: 8.5px;
+}
+
+.first-bg .navbar-dark .container .navbar-nav {
+    height: 55px;
+    margin-bottom: -1px;
+}
+
+.first-bg .navbar-dark .container .navbar-nav:hover.nav-item {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.first-bg .navbar-dark .container .navbar-nav .nav-item {
+    border-bottom: 1px solid transparent;
 }
 
 .container.position-relative div {
