@@ -16,14 +16,9 @@
 
 .first-bg {
 
-    /* width: 100vw;
-    height: 100vh;
-    background: url(../images/landing.jpg) no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.623); */
-
     .navbar-dark {
+        margin-top: 10px;
+        height: 55px;
         background-color: red;
 
         .container {
@@ -77,7 +72,7 @@
             height: 30px;
             position: absolute;
             right: 10px;
-            top: -55px;
+            top: -45px;
             border-left: 2px solid #fff;
             padding-left: 40px;
             display: flex;
