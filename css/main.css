@@ -259,6 +259,7 @@
     padding: 5px 20px;
     background-color: rgba(255, 255, 255, 0.453);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     transform: translateY(60px);
     transition: 0.4s;
 }
@@ -717,6 +718,7 @@ footer div+p {
     .first-bg .navbar-dark .container .navbar-nav .nav-item {
         background-color: #41252d81;
         backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
     }
 
     .about .coffee div.row p:nth-child(1),
