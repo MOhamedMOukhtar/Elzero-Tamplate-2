@@ -17,96 +17,581 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Bootstrap_JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="first-bg position-relative" style="z-index: 2;">
-        <nav class="navbar navbar-dark navbar-expand-md pt-3 bg-transparent">
-            <div class="container border-bottom">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="d-block pb-2"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item border-bottom border-main">
-                            <a class="nav-link active" aria-current="page" href="#">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+    <!-- navbar -->
+
+    <div class="first-screen vh-100">
+        <div class="first-bg position-relative" style="z-index: 2;">
+            <nav class="navbar navbar-dark navbar-expand-md pt-3 bg-transparent">
+                <div class="container border-bottom">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="d-block pb-2"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item border-bottom border-main ps-3 ps-md-0">
+                                <a class="nav-link active" aria-current="page" href="#">home</a>
+                            </li>
+                            <li class="nav-item ps-3 ps-md-0">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item ps-3 ps-md-0">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item ps-3 ps-md-0">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item ps-3 ps-md-0">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item ps-3 ps-md-0">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container position-relative">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                 </div>
             </div>
-        </nav>
-        <div class="container position-relative">
-            <div>
-                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+
+        <!-- end navbar -->
+
+        <!-- carousel -->
+
+        <div style="height: 88.8vh;">
+            <div id="carouselExampleIndicators" class="carousel slide container-fluid position-absolute top-0"
+                data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active position-relative">
+                        <div class="position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+                        <img src="images/shuffle-01.jpg" class="d-block w-100" alt="error"
+                            style="width: 100vw;height: 100vh;">
+                        <div class="main-hello w-100 h-100">
+                            <div class="hello-world position-absolute top-50 translate-middle-y d-flex
+                    justify-content-end p-lg-4 p-3 px-md-0 px-sm-5 row w-50 bg-main-color-30">
+                                <div class="text-white col-md-10">
+                                    <h2 class="lh-base mb-4">Hello World!<br>We Are Kasper We Make Art.</h2>
+                                    <p class="lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                        Mauris
+                                        blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                                        Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                                        tincidunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+                        <img src="images/shuffle-02.jpg" class="d-block w-100" alt="error"
+                            style="width: 100vw;height: 100vh;">
+                        <div class="main-hello w-100 h-100">
+                            <div class="hello-world position-absolute top-50 translate-middle-y text-bg-danger bg-opacity-50 d-flex
+                    justify-content-end p-lg-4 p-3 px-md-0 px-sm-5 row w-50">
+                                <div class="text-white col-md-10">
+                                    <h2 class="lh-base mb-4">Hello World!<br>We Are Kasper We Make Art.</h2>
+                                    <p class="lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                        Mauris
+                                        blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                                        Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                                        tincidunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+                        <img src="images/shuffle-03.jpg" class="d-block w-100" alt="error"
+                            style="width: 100vw;height: 100vh;">
+                        <div class="main-hello w-100 h-100">
+                            <div class="hello-world position-absolute top-50 translate-middle-y text-bg-warning bg-opacity-50 d-flex
+                    justify-content-end p-lg-4 p-3 px-md-0 px-sm-5 row w-50">
+                                <div class="text-white col-md-10">
+                                    <h2 class="lh-base mb-4">Hello World!<br>We Are Kasper We Make Art.</h2>
+                                    <p class="lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                                        Mauris
+                                        blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.
+                                        Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                                        tincidunt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </div>
 
+        <!-- end carousel -->
 
-    <div id="carouselExampleControls" class="carousel slide container-fluid position-absolute top-0"
-        data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active position-relative">
-                <div class="position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.425);"></div>
-                <img src="images/shuffle-01.jpg" class="d-block" alt="nav" style="width: 100vw;height: 100vh;">
+        <!-- srevices -->
+
+        <div class="services container main-p-y px-1" id="services">
+            <div class="main-head m-auto text-center">
+                <h2 class="h1 fw-normal mx-auto">SERVICES</h2>
+                <p class="text-muted lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                    at sem. Mauris
+                    blandit aliquet elit, eget
+                    tincidunt.</p>
             </div>
-            <div class="carousel-item">
-                <div class="position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.425);"></div>
-                <img src="images/shuffle-02.jpg" class="d-block" alt="nav" style="width: 100vw;height: 100vh;">
-            </div>
-            <div class="carousel-item">
-                <div class="position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.425);"></div>
-                <img src="images/shuffle-03.jpg" class="d-block" alt="nav" style="width: 100vw;height: 100vh;">
+            <div class="content row row-cols-lg-2 row-cols-1 g-5 text-center text-md-start">
+                <div class="col">
+                    <div class="d-md-flex d-block gap-5">
+                        <i class="fas fa-desktop fa-3x mb-4 mb-md-0"></i>
+                        <div>
+                            <p class="main-color fw-bold">Vorem amet intuitive</p>
+                            <span class="lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris
+                                blandit
+                                aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-md-flex d-block gap-5">
+                        <i class="fas fa-cog fa-3x mb-4 mb-md-0"></i>
+                        <div>
+                            <p class="main-color fw-bold">Vorem amet intuitive</p>
+                            <span class="lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris
+                                blandit
+                                aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-md-flex d-block gap-5">
+                        <i class="fas fa-pencil-ruler fa-3x mb-4 mb-md-0"></i>
+                        <div>
+                            <p class="main-color fw-bold">Vorem amet intuitive</p>
+                            <span class="lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris
+                                blandit
+                                aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-md-flex d-block gap-5">
+                        <i class="fas fa-camera fa-3x mb-4 mb-md-0"></i>
+                        <div>
+                            <p class="main-color fw-bold">Vorem amet intuitive</p>
+                            <span class="lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris
+                                blandit
+                                aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
+        <!-- end srevices -->
 
+        <!-- phone -->
 
+        <div class="phone">
+            <div class="content h-100">
+                <div class="left d-none d-md-flex">
+                    <img src="images/mobile.png" alt="">
+                </div>
+                <div class="right text-white bg-main-color-30">
+                    <h2 class="mb-5 fw-normal">OUR DESIGN COMES WITH...</h2>
+                    <div class="text">
+                        <p>Responsive Design</p>
+                        <p>Modern And Clean Design</p>
+                        <p>Clean Code</p>
+                        <p>Browser Friendly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- end phone -->
 
+        <!-- portfolio -->
 
+        <div class="portfolio main-p-y">
+            <div class="main-head m-auto text-center">
+                <h2 class="h1 fw-normal mx-auto">PORTFOLIO</h2>
+                <p class="text-muted lh-lg px-1">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="all-app d-flex gap-3 justify-content-center align-items-center">
+                <span class="bg-main-color text-white py-1 px-2 pointer">All</span>
+                <span class="pointer">App</span>
+                <span class="pointer">Photo</span>
+                <span class="pointer">Web</span>
+                <span class="pointer">Print</span>
+            </div>
+            <div class="content row row-cols-lg-4 row-cols-md-2 row-cols-1 g-0 gy-1">
+                <div class="col"><img src="images/shuffle-01.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+                <div class="col"><img src="images/shuffle-02.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+                <div class="col"><img src="images/shuffle-03.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+                <div class="col"><img src="images/shuffle-04.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+                <div class="col"><img src="images/shuffle-05.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+                <div class="col"><img src="images/shuffle-06.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+                <div class="col"><img src="images/shuffle-07.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+                <div class="col"><img src="images/shuffle-08.jpg" alt="">
+                    <div class="text position-absolute">
+                        <p>Awesome Image <br><span>Photography</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <div class="btn bg-main-color text-white rounded-0 m-auto p-">MORE</div>
+            </div>
+        </div>
 
+        <!-- end portfolio -->
 
+        <!-- video -->
 
+        <div class="video">
+            <video src="images/awesome-video.mp4"></video>
+            <div class="overlay"></div>
+            <div class="text text-center translate-middle w-100 p-5">
+                <h2 class="mb-4">SUPER AWESOME VIDEO HERE</h2>
+                <span class="d-block mb-4">Its All You Need</span>
+                <div class="btn btn-dark rounded-0">SEE MORE</div>
+            </div>
+        </div>
 
+        <!-- end video -->
 
+        <!-- about us -->
 
+        <div class="about main-p-y">
+            <div class="main-head m-auto text-center px-1">
+                <h2 class="h1 fw-normal mx-auto">ABOUT US</h2>
+                <p class="text-muted lh-lg">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="container text-center">
+                <img src="images/about.png" alt="">
+            </div>
+            <div class=" coffee">
+                <div class="container">
+                    <div class=" row row-cols-lg-4 row-cols-md-2 row-cols-1 text-center bg-main-color-50 gy-">
+                        <p class=" fw-bolder col">1.236</p>
+                        <p class=" fw-bolder col">256</p>
+                        <p class=" fw-bolder col">1,743</p>
+                        <p class=" fw-bolder col">17</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- end about us -->
 
+        <!-- test -->
 
+        <div class="test container main-p-y">
+            <div class=" row row-cols-lg-2 row-cols-1 ">
+                <div class="left col mb-md-5 mb-lg-0">
+                    <div class="text text-center">
+                        <h3 class="">TESTIMONIALS</h3>
+                        <p class="lh-lg text-muted mb-60px">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                            sem.
+                            Mauris
+                            blandit aliquet elit, eget tincidunt.</p>
+                    </div>
+                    <div class="under">
+                        <div class="d-flex position-relative align-items-center mb-30px">
+                            <img src="images/skills-01.jpg" alt="" class="rounded-circle me-sm-5">
+                            <p class="border-bottom pb-2">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem.
+                                Mauris
+                                blandit aliquet
+                                elit, eget tincidunt. <span class="d-block text-muted text-end">John Doe, CEO</span>
+                            </p>
+                        </div>
+                        <div class="d-flex position-relative align-items-center">
+                            <img src="images/skills-02.jpg" alt="" class="rounded-circle me-sm-5">
+                            <p class="border-bottom pb-2">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem.
+                                Mauris
+                                blandit aliquet
+                                elit, eget tincidunt. <span class="d-block text-muted text-end">John Doe, CEO</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-unstyled d-flex gap-2 mt-4">
+                            <li class="bg-white border border-black pointer"></li>
+                            <li class="bg-main-color pointer"></li>
+                            <li class="bg-white border border-black pointer"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right col">
+                    <div class="text text-center">
+                        <h3 class="">SKILLS</h3>
+                        <p class="lh-lg text-muted mb-60px">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                            sem.
+                            Mauris
+                            blandit aliquet elit, eget tincidunt.</p>
+                    </div>
+                    <div class="under">
+                        <div class="gro position-relative mb-30px">
+                            <span class="">ADOBE</span>
+                            <span class="d-block bg-progress h-30px mt-2 position-relative"></span>
+                        </div>
+                        <div class="gro position-relative mb-30px">
+                            <span class="">HTML & CSS</span>
+                            <span class="d-block bg-progress h-30px mt-2 position-relative"></span>
+                        </div>
+                        <div class="gro position-relative mb-30px">
+                            <span class="">JAVASCRIPT</span>
+                            <span class="d-block bg-progress h-30px mt-2 position-relative"></span>
+                        </div>
+                        <div class="gro position-relative">
+                            <span class="">PHP</span>
+                            <span class="d-block bg-progress h-30px mt-2 position-relative"></span>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- end test -->
 
+        <!-- accumsan -->
+
+        <div class="accumsan main-p-y text-center">
+            <div class="container">
+                <q class="d-block mb-3">accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget
+                    tincidunt.</q>
+                <span>John Doe</span>
+            </div>
+        </div>
+
+        <!-- end accumsan -->
+
+        <!-- pricing -->
+
+        <div class="container pricing main-p-y px-2">
+            <div class="main-head m-auto text-center">
+                <h2 class="h1 fw-normal mx-auto">PRICING</h2>
+                <p class="text-muted lh-lg mb-100px">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                    Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="content text-center row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-4 gy-xl-0 ">
+                <div class="col">
+                    <div class="elemo">
+                        <div class="head border-bottom border-main">
+                            <span class="mt-5 mb-2 d-block">BASIC</span>
+                            <p class="fw-bold mb-4">19</p>
+                        </div>
+                        <ul class="list-unstyled border-bottom border-main">
+                            <li class="py-3">Feature No 1</li>
+                            <li class="py-3">Extra Feature</li>
+                            <li class="py-3">Extra Feature No 2</li>
+                            <li class="py-3">Feature</li>
+                        </ul>
+                        <div class="btn border border-main rounded-0 p-3 my-3 mb-4">Buy Now</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="elemo">
+                        <div class="head border-bottom border-main">
+                            <span class="mt-5 mb-2 d-block">PREMIUM</span>
+                            <p class="fw-bold mb-4">29</p>
+                        </div>
+                        <ul class="list-unstyled border-bottom border-main">
+                            <li class="py-3">Feature No 1</li>
+                            <li class="py-3">Extra Feature</li>
+                            <li class="py-3">Extra Feature No 2</li>
+                            <li class="py-3">Feature</li>
+                        </ul>
+                        <div class="btn border border-main rounded-0 p-3 my-3 mb-4">Buy Now</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="elemo">
+                        <div class="head border-bottom border-main">
+                            <span class="mt-5 mb-2 d-block">PRO</span>
+                            <p class="fw-bold mb-4">39</p>
+                        </div>
+                        <ul class="list-unstyled border-bottom border-main">
+                            <li class="py-3">Feature No 1</li>
+                            <li class="py-3">Extra Feature</li>
+                            <li class="py-3">Extra Feature No 2</li>
+                            <li class="py-3">Feature</li>
+                        </ul>
+                        <div class="btn border border-main rounded-0 p-3 my-3 mb-4">Buy Now</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="elemo">
+                        <div class="head border-bottom border-main">
+                            <span class="mt-5 mb-2 d-block">PLATINUM</span>
+                            <p class="fw-bold mb-4">49</p>
+                        </div>
+                        <ul class="list-unstyled border-bottom border-main">
+                            <li class="py-3">Feature No 1</li>
+                            <li class="py-3">Extra Feature</li>
+                            <li class="py-3">Extra Feature No 2</li>
+                            <li class="py-3">Feature</li>
+                        </ul>
+                        <div class="btn border border-main rounded-0 p-3 my-3 mb-4">Buy Now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p style="font-size: 20px;">Contact us if you have special request</p>
+                <div class="btn bg-info text-white rounded-0 py-2 px-4">Contact Us</div>
+            </div>
+        </div>
+
+        <!-- end pricing -->
+
+        <!-- your-email -->
+
+        <div class="email main-p-y">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="input-group input-group-lg m-auto position-relative" style="max-width: 500px;">
+                            <input type="text" class="rounded-0 form-control bg-transparent text-white"
+                                placeholder="Your Email" aria-label="Recipient's username"
+                                aria-describedby="button-addon2" style="box-shadow: none;border-color:white;">
+                            <button class="btn btn-info text-white rounded-0 fs-6 border border-start-0" type="button"
+                                id="button-addon2">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="text-white mt-5 mt-lg-0">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                            sem.
+                            Mauris
+                            blan
+                            dit aliquet elit,
+                            eget tincidunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end your-email -->
+
+        <!-- CONTACT US -->
+
+        <div class="contact container main-p-y">
+            <div class="main-head m-auto text-center">
+                <h2 class="h1 fw-normal mx-auto">CONTACT US</h2>
+                <p class="text-muted lh-lg mb-100px px-1">Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                    sem.
+                    Mauris
+                    blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="content row">
+                <div class="left col-md-8 col-lg-9 order-2 order-md-1">
+                    <div>
+                        <input type="text" class="form-control form-control-lg rounded-0 mb-4 "
+                            style="box-shadow: none;" placeholder="Your Name">
+                        <input type="email" class="form-control form-control-lg rounded-0 mb-4"
+                            style="box-shadow: none;" placeholder="Your Email">
+                        <textarea class="form-control rounded-0"
+                            style="border-color: #dee2e6; resize: none; width: 100%; box-shadow: none;"
+                            placeholder="Your Massage"></textarea>
+                    </div>
+                </div>
+                <div class="right col-md-4 col-lg-3 order-1 order-md-2 text-center text-md-start mb-4 mb-md-0">
+                    <div>
+                        <h4 class="mb-4">GET IN TOUCH</h4>
+                        <span class="text-muted d-block mb-3">+00 123.456.789</span>
+                        <span class="text-muted d-block mb-3">+00 123.456.789</span>
+                        <h4 class="mb-4 mt-5">WHERE WE ARE</h4>
+                        <address class="text-muted lh-lg">Awesome Address 17 <br> New York, NYC <br>123-4567-890 <br>
+                            USA
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="btn btn-info text-white rounded-0 btn-lg py-3 mt-5">SEND MASSAGE</div>
+            </div>
+        </div>
+
+        <!-- end CONTACT US -->
+
+        <!-- footer -->
+
+        <footer class="py-5 d-flex align-items-center flex-column">
+            <img src="images/logo.png" alt="" class="mb-4">
+            <p class="">WE ARE SOCIAL</p>
+            <div class="mt-3 d-flex gap-4">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-home"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p class="mt-5">&#169; 2021 <span class="main-color">Kasper</span> All Right Reserved</p>
+        </footer>
+
+        <!-- end footer -->
+
+        <!-- <div class="quary"></div> -->
 
 </body>
 
